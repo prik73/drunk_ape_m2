@@ -38,4 +38,4 @@ const useMeetingActions = () => {
   return { createInstantMeeting, joinMeeting };
 };
 
-export default useMeetingActions;
+export default useMeetingActions;    

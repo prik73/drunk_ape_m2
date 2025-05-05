@@ -17,6 +17,7 @@ const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
       apiKey: process.env.NEXT_PUBLIC_STREAM_API_KEY!,
       user: {
         id: user?.id,
+        //if first name and last name are undefines, then we will use user id
         name: user?.firstName || "" + " " + user?.lastName || "" || user?.id,
         image: user?.imageUrl,
       },
@@ -28,7 +29,11 @@ const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
 
   if (!streamVideoClient) return <LoaderUI />;
 
-  return <StreamVideo client={streamVideoClient}>{children}</StreamVideo>;
+  return (
+    <StreamVideo client={streamVideoClient}>
+        {children}
+    </StreamVideo>
+)
 };
 
 export default StreamVideoProvider;
