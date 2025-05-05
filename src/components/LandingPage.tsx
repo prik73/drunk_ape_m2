@@ -7,7 +7,7 @@ const LandingPage = () => {
       {/* Simple navbar for not logged in users */}
       <nav className="border-b px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold">Your App</h1>
+          <h1 className="text-2xl font-bold">Code-Collab</h1>
         </div>
         <div className="flex items-center gap-x-2">
           <SignInButton mode="modal">
@@ -27,10 +27,10 @@ const LandingPage = () => {
       <div className="flex flex-col items-center justify-center flex-1 px-4 text-center">
         <div className="max-w-3xl space-y-8">
           <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">
-            Welcome to <span className="text-blue-600 dark:text-blue-500">Your App</span>
+            Welcome to <span className="text-blue-600 dark:text-blue-500">minor ka project</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
-            Your app description goes here. This is where you explain what your application does and why users should sign up.
+            live code with people on same project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <SignUpButton mode="modal">
@@ -58,9 +58,9 @@ const LandingPage = () => {
               <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-4">
                 <span className="text-blue-600 dark:text-blue-400 text-xl">1</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">Feature One</h3>
+              <h3 className="text-xl font-bold mb-2">Help Junior Devs</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Description of your first amazing feature goes here.
+                do development face to face with beginner projects.
               </p>
             </div>
             
